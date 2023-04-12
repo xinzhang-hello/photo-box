@@ -1,7 +1,17 @@
-import PhotoItem from "./PhotoItem"
+import PhotoItem from "./PhotoItem";
 export default function Gallery() {
-    return (<section>
-        <h1>My Baby Photos</h1>
+  return (
+    <>
+      <h1>My Baby Photos</h1>
+      <section className="columns-4 gap-8">
+        <PhotoItem className="w-full aspect-square"></PhotoItem>
         <PhotoItem></PhotoItem>
-    </section>)
+        <PhotoItem></PhotoItem>
+        <PhotoItem></PhotoItem>
+        <PhotoItem></PhotoItem>
+        <PhotoItem></PhotoItem>
+        <PhotoItem></PhotoItem>
+      </section>
+    </>
+  );
 }
