@@ -1,8 +1,10 @@
-export default function PhotoItem() {
+import Image from "next/image";
+export default function PhotoItem({ imgId }) {
   return (
-    <img
-      className="aspect-square"
-      src="https://i.imgur.com/ZF6s192.jpg"
+    <Image
+      width={200}
+      height={400}
+      src={imgId}
       alt="'Floralis Genérica' by Eduardo Catalano: a gigantic metallic flower sculpture with reflective petals"
     />
   );
